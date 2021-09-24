@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <title>Document</title>
+</head>
+<!-- npx tailwindcss -i css/tailwind.css -o build/tailwind.css --watch -->
+<!-- relative before:content-[attr(before)] before:absolute before:-inset-0 before:bg-black before:opacity-20 " before="" -->
+
+<body>
+    <div class="main">
+        <nav class="w-full  z-auto bg-[#113448] flex items-center p-3 flex-wrap">
+            <div>
+                <img class="w-20 mx-5" src="./css/images/logo.svg" alt="">
+
+            </div>
+            <button class="nav-toggler text-white inline-flex p-3 lg:hidden ml-auto ">
+              <i class="fas fa-bars "></i>
+            </button>
+            <div class="hidden top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto transition-all">
+                <ul class="flex flex-col text-[15px] text-white lg:inline-flex lg:flex-row lg:ml-auto Mont font-semibold">
+                    <li class="lg:py-0 md:py-[10px]">
+                        <a class="text-white px-[20px]  lg:hover:text-[#f837c8]  " href="#">HOME</a>
+                    </li>
+                    <li class="lg:py-0 md:py-[10px] ">
+                        <a class="text-white px-[20px] lg:hover:text-[#f837c8]  " href=" #">INTRO</a>
+                    </li>
+                    <li class="lg:py-0 md:py-[10px] ">
+                        <a class="text-white px-[20px]  lg:hover:text-[#f837c8] " href=" #">SERVICES</a>
+                    </li>
+                    <li class="lg:py-0 md:py-[10px] ">
+                        <a class="text-white px-[20px]  lg:hover:text-[#f837c8] " href=" #">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="mb-[50px]">
+            <div class="  py-40 h-[700px] bg-cover" style="background-image: url(./css/images/header-background.jpg)">
+                <div class="px-28 text-center">
+                    <h1 class=" Mont text-[40px] mt-[70px] lg:text-[55px] font-bold text-white ">BUSINESS SERVICES</h1>
+                    <p class="Sans text-white text-lg mt-[10px]">Aria is a top consultancy company specializing in business growth using </p>
+                    <p class="Sans text-white text-lg mb-[15px]">online marketing and conversion optimization tactics</p>
+                    <button class="border border-blue-100 rounded-md text-white px-[25px] py-[10px] bg-[#14bf98] lg:hover:bg-[#f837c8]  Sans text-[14px] mt-3 font-bold">DISCOVER</button>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-7 pl-[25px] pr-[25px] lg:px-[100px] lg:my-[100px]">
+                <div class="py-4 px-6">
+                    <p class="Mont font-bold text-[14px] text-[#14bf98]">INTRO</p>
+                    <h1 class="Mont text-xl md:text-2xl lg:text-3xl text-[#787976] font-bold mt-3 mb-4">We Offer Some Of The Best Business Growth Services In Town</h1>
+                    <p class="Sans text-base text-[#787976] mt-1 mb-3">Launching a new company or developing the market position of an existing one can be quite an overwhelming processs at times.</p>
+                    <p class="Sans text-base text-[#787976] mt-1 mb-3 italic">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>
+                    <h2 class="Mont font-bold text-[#292928] text-xl ">DNS - Developer</h2>
+                </div>
+                <div class="col-span-2">
+                    <img class="w-[774px] md:w-full" src="./css/images/intro-office.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:text-center gap-x-7 pl-[25px] pr-[25px] lg:px-[100px] lg:my-[100px]">
+                <div class="py-4 px-6">
+                    <div class="mb-5 bg-cover bg-no-repeat h-[98px] w-[110px] m-auto md:m-auto " style="background-image: url('./css/images/hexagon-green.svg')">
+                        <i class="fas fa-binoculars h-[98px] text-white text-[44px] flex justify-around items-center "></i>
+                    </div>
+                    <h1 class="Mont text-xl font-bold my-4 text-[#484a46]">
+                        Environment Analysis
+                    </h1>
+                    <p class="Sans text-[#787976] text-base">
+                        The starting point of any success story is knowing your current position in the business environment
+                    </p>
+                </div>
+                <div class="py-4 px-6">
+                    <div class="mb-5 bg-cover m-auto md:m-auto bg-no-repeat h-[98px] w-[110px] " style="background-image: url('./css/images/hexagon-green.svg')">
+                        <i class="fas fa-list-alt h-[98px] text-white text-[44px] flex justify-around items-center "></i>
+                    </div>
+                    <h1 class="Mont text-xl font-bold my-4 text-[#484a46]">
+                        Development Planning
+                    </h1>
+                    <p class="Sans text-[#787976] text-base">
+                        After completing the environmental analysis the next stage is to design and plan your development strategy </p>
+                </div>
+                <div class="py-4 px-6">
+                    <div class="mb-5 bg-cover m-auto md:m-auto bg-no-repeat h-[98px] w-[110px] " style="background-image: url('./css/images/hexagon-green.svg')">
+                        <i class="fas fa-chart-pie h-[98px] text-white text-[44px] flex justify-around items-center "></i>
+                    </div>
+                    <h1 class="Mont text-xl font-bold my-4 text-[#484a46]">
+                        Execution & Evaluation
+                    </h1>
+                    <p class="Sans text-[#787976] text-base">
+                        In this phase you will focus on executing the actions plan and evaluating the results after each marketing campaign </p>
+                </div>
+
+
+            </div>
+        </div>
+        <div>
+            <div class="text-center">
+                <h3 class="text-sm font-bold text-[#14bf98]">SERVICES</h3>
+                <h1 class="Mont text-xl md:text-2xl lg:text-3xl text-[#5a5959] font-bold mt-3">Choose The Service Package</h1>
+                <h1 class="Mont text-xl md:text-2xl lg:text-3xl text-[#5a5959] font-bold  mb-4">That Suits Your Needs</h1>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 mt-7 gap-x-9 pl-[25px] pr-[25px] lg:px-[100px] lg:my-[100px]">
+                <div class="rounded-md border border-[#e7e7e7]">
+                    <div class="">
+                        <img class="lg:w-[359px] md:w-full  rounded-tl-md rounded-tr-md" src="./css/images/services-1.jpg" alt="">
+                    </div>
+                    <div class="px-10 pt-8 pb-6">
+                        <h1 class="Mont text-xl font-bold my-4 text-center text-[#484a46]">Accelerated Growth</h1>
+                        <p class="Sans text-[#787976] text-lg mb-4">
+                            Use this service pack to give your company the necessary impulse to become an industry leader </p>
+                        <span class=" Sans block text-[#787976] text-base ">
+                            <i class = "fas fa-square text-[#14bf98] text-[10px] mr-[10px]  "></i>
+                            Business strategy planning
+                        </span>
+                        <span class=" Sans block text-[#787976] text-base">
+                            <i class = "fas fa-square text-[#14bf98] text-[10px] mr-[10px]  "></i>
+                            Taking the planned actions
+                        </span>
+                        <h3 class=" Month text-center font-bold text-lg mt-4">
+                            Starting at <span class="text-[#14bf98]">$199</span>
+                        </h3>
+                    </div>
+
+                    <div class=" text-center mb-4">
+                        <a class="Mont  transition-all hover:text-[#f9faf9] hover:bg-[#f837c8] inline-block  bg-[#14bf98] rounded-sm text-sm  text-white font-bold px-6 py-[9px]" href="#">DETAILS</a>
+                    </div>
+                </div>
+                <div class="rounded-md border border-[#e7e7e7]">
+                    <div class="">
+                        <img class="lg:w-[359px] md:w-full  rounded-tl-md rounded-tr-md" src="./css/images/services-2.jpg" alt="">
+                    </div>
+                    <div class="px-10 pt-8 pb-6">
+                        <h1 class="Mont text-xl font-bold my-4 text-center text-[#484a46]">Market Domination</h1>
+                        <p class="Sans text-[#787976] text-lg mb-4">
+                            You already are a reference point in your industry now you need to learn about acquisitions</p>
+                        <span class=" Sans block text-[#787976] text-base ">
+                            <i class = "fas fa-square text-[#14bf98] text-[10px] mr-[10px]  "></i>
+                            Maintaining the leader status
+                        </span>
+                        <span class=" Sans block text-[#787976] text-base">
+                            <i class = "fas fa-square text-[#14bf98] text-[10px] mr-[10px]  "></i>
+                            Acquisitions the right way
+                        </span>
+                        <h3 class=" Month text-center font-bold text-lg mt-4">
+                            Starting at <span class="text-[#14bf98]">$299</span>
+                        </h3>
+                    </div>
+
+                    <div class=" text-center mb-4">
+                        <a class="Mont  transition-all hover:text-[#f9faf9] hover:bg-[#f837c8]  inline-block  bg-[#14bf98] rounded-sm text-sm  text-white font-bold px-6 py-[9px]" href="#">DETAILS</a>
+                    </div>
+                </div>
+                <div class="rounded-md border border-[#e7e7e7]">
+                    <div class="">
+                        <img class="lg:w-[359px] md:w-full  rounded-tl-md rounded-tr-md" src="./css/images/services-3.jpg" alt="">
+                    </div>
+                    <div class="px-10 pt-8 pb-6">
+                        <h1 class="Mont text-xl font-bold my-4 text-center text-[#484a46]">Off The Ground</h1>
+                        <p class="Sans text-[#787976] text-lg mb-4">
+                            Perfect for fresh ideas or young startups, this package will help get the business off the ground
+                        </p>
+                        <span class=" Sans block text-[#787976] text-base ">
+                            <i class = "fas fa-square text-[#14bf98] text-[10px] mr-[10px]  "></i>
+                            Environment and competition
+                        </span>
+                        <span class=" Sans block text-[#787976] text-base">
+                            <i class = "fas fa-square text-[#14bf98] text-[10px] mr-[10px]  "></i>
+                            Designing the marketing plan
+                        </span>
+                        <h3 class=" Month text-center font-bold text-lg mt-4">
+                            Starting at <span class="text-[#14bf98]">$399</span>
+                        </h3>
+                    </div>
+
+                    <div class=" text-center mb-4">
+                        <a class="Mont  transition-all hover:text-[#f9faf9] hover:bg-[#f837c8]  inline-block  bg-[#14bf98] rounded-sm text-sm  text-white font-bold px-6 py-[9px]" href="#">DETAILS</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div>
+                    <img class="h-full" src="./css/images/details-1-background.jpg" alt="">
+                </div>
+                <div class="text-center items-center  mx-8 pt-24 md:m-auto md:mx-24">
+                    <h1 class=" Mont text-xl md:text-2xl lg:text-3xl font-bold my-4 text-center text-[#484a46]">Accelerate Business Growth To Improve Revenue Numbers</h1>
+                    <div class="mt-5">
+                        <h2 class="Month text-lg md:text-xl lg:text-2xl font-bold text-[#484a46] cursor-pointer flex hover:text-[#14bf98]">
+                            <p class="mr-3 border-2  border-[#14bf98] w-[37px] h-[37px] rounded-[100%] ">1</p>
+                            How Can Aria Help Your Business
+                        </h2>
+                    </div>
+                    <div class="my-5">
+                        <h2 class="Month text-lg md:text-xl lg:text-2xl font-bold text-[#484a46] cursor-pointer flex hover:text-[#14bf98]">
+                            <p class="mr-3 border-2  border-[#14bf98] w-[37px] h-[37px] rounded-[100%] ">2</p>
+                            Great Strategic Business Planning
+                        </h2>
+                    </div>
+                    <div class="my-5">
+                        <h2 class="Month text-lg md:text-xl lg:text-2xl font-bold text-[#484a46] cursor-pointer flex hover:text-[#14bf98]">
+                            <p class="mr-3 border-2  border-[#14bf98] w-[37px] h-[37px] rounded-[100%] ">3</p>
+                            Online Marketing Campaigns
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="">
+            <div class="grid grid-cols-1 lg:grid-cols-2 ">
+                <div class="ml-[25px] mr-3 md:ml-[75px] md:mr-24 lg:ml-[120px] pt-16">
+                    <div class="items-center md:justify-center text-[#c1cace] transition-all  ">
+                        <ul class="flex sm:justify-center">
+                            <li class="tab-item  active flex items-center cursor-pointer active hover:text-[#14bf98]">
+                                <span><i class = "fas fa-th"></i></span>
+                                <p class="Mont text-base md:text-[22px] text-[19px] font-bold ml-1 ">Business</p>
+                            </li>
+                            <li class="tab-item flex items-center  cursor-pointer Mont hover:text-[#14bf98]">
+                                <span class=" ml-[28px]"><i class = "fas fa-th"></i></span>
+                                <p class="Mont text-base md:text-[22px] text-[19px] font-bold ml-1 ">Expertise</p>
+                            </li>
+                            <li class="tab-item flex items-center  cursor-pointer Mont hover:text-[#14bf98]">
+                                <span class="ml-[28px]"><i class = "fas fa-th"></i></span>
+                                <p class="Mont text-base md:text-[22px] text-[19px] font-bold ml-1 ">Quality</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="active tab-pane ">
+                        <div class="transition-all">
+                            <div class="mt-3">
+                                <h1 class="Month text-xl font-bold text-[#484a46] ">Business Services For Companies</h1>
+                                <p class="Sans text-[#787976] text-base mb-4 mt-2">Aria provides the most innovative and customized business services in the industry. Our Services section shows how flexible we are for all types of budgets.</p>
+                            </div>
+                            <div>
+                                <p class="Mont text-sm text-[#484a46] font-semibold">Business Development 100%</p>
+                                <p class="w-full h-5 bg-[#14bf98] rounded-sm mt-1"></p>
+                            </div>
+                            <div class="mt-3">
+                                <p class="Mont text-sm text-[#484a46] font-semibold">Business Development 76%</p>
+                                <p class="w-[76%] h-5 bg-[#14bf98] rounded-sm mt-1"></p>
+                            </div>
+                            <div class="mt-3 mb-7">
+                                <p class="Mont text-sm text-[#484a46] font-semibold">Business Development 90%</p>
+                                <p class="w-[90%] h-5 bg-[#14bf98] rounded-sm mt-1"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane ">
+                        <div class="transition-all">
+                            <div class="grid grid-cols-1 lg:grid-cols-2">
+                                <div class="flex mt-4">
+                                    <h1 class="Mont font-bold text-3xl ml-3 mr-5">1</h1>
+                                    <p class="Sans text-[#787976]">
+                                        <strong>
+                                            High quality </strong> is on top of our list when it comes to the way we deliver the services
+                                    </p>
+                                </div>
+                                <div class="flex mt-4">
+                                    <h1 class="Mont font-bold text-3xl ml-3 mr-5">4</h1>
+                                    <p class="Sans text-[#787976]">
+                                        <strong>We're always looking</strong> for industry leaders to help them win their market position
+                                    </p>
+                                </div>
+                                <div class="flex mt-4">
+                                    <h1 class="Mont font-bold text-3xl ml-3 mr-5">2</h1>
+                                    <p class="Sans text-[#787976]">
+                                        <strong>
+                                            Maximum impact  </strong>is what we look for in our actions
+                                    </p>
+                                </div>
+                                <div class="flex mt-4">
+                                    <h1 class="Mont font-bold text-3xl ml-3 mr-5">5</h1>
+                                    <p class="Sans text-[#787976]">
+                                        <strong>Evaluation </strong>is a key aspect of this business and important
+                                    </p>
+                                </div>
+                                <div class="flex mt-4">
+                                    <h1 class="Mont font-bold text-3xl ml-3 mr-5">3</h1>
+                                    <p class="Sans text-[#787976]">
+                                        <strong>
+                                            Quality standards  </strong>are important but meant to be exceeded
+                                    </p>
+                                </div>
+                                <div class="flex mt-4">
+                                    <h1 class="Mont font-bold text-3xl ml-3 mr-5">6</h1>
+                                    <p class="Sans text-[#787976]">
+                                        <strong>
+                                            Ethic </strong>is procedures ar alwasy at the base of everything we do
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane">
+                        <div class="transition-all">
+                            <div class="text-[#787976] mt-7">
+                                <p class="Sans"><strong class="Mont">We strive to achieve </strong>100% customer satisfaction for both types of customers: hiring companies and job seekers.</p>
+                                <p class="Sans">Types of customers: <span class="text-[#14bf98] font-bold">DNS</span> </p>
+                            </div>
+                            <div class="text-[#787976] mt-7">
+                                <p class="Sans">
+                                    <strong class="Mont">Our goal is to help</strong>your company achieve its full potential and establish long term stability for <span class="text-[#14bf98] font-bold">DNS</span>
+                                </p>
+                            </div>
+
+                            <div class="mt-3">
+                                <span class=" Sans mt-1 block text-[#787976] text-base ">
+                                    <i class = "fas fa-square text-[#14bf98] text-[10px] mr-[10px]  "></i>It's easy to get a quotation, just call our office anytime
+                                </span>
+                                <span class=" Sans mt-1 block text-[#787976] text-base ">
+                                    <i class = "fas fa-square text-[#14bf98] text-[10px] mr-[10px]  "></i>
+                                    We'll get back to you with an initial estimate soon
+                                </span>
+                                <span class=" Sans mt-1 block text-[#787976] text-base ">
+                                    <i class = "fas fa-square text-[#14bf98] text-[10px] mr-[10px]  "></i>
+                                    Get ready to see results even after only 30 days
+                                </span>
+                                <span class=" Sans mt-1 block text-[#787976] text-base ">
+                                    <i class = "fas fa-square text-[#14bf98] text-[10px] mr-[10px]  "></i>
+                                    Ask for a quote and start improving your business
+                                </span>
+                                <span class=" Sans mt-1 block text-[#787976] text-base ">
+                                    <i class = "fas fa-square text-[#14bf98] text-[10px] mr-[10px]  "></i> Just fill out the form and we'll call you right away
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img class="h-full" src="./css/images/details-2-background.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="my-28">
+            <div class="text-center">
+                <h1 class="Mont text-xl md:text-2xl lg:text-3xl font-bold my-4 text-center text-[#484a46]">
+                    Our Team Of Consultants
+                </h1>
+                <div class="class= Sans text-[#787976] text-base ">
+                    <p>We're only as strong and as knowledgeable as our team.</p>
+                    <p>
+                        So here are the men and women which help customers meet goals and grow companies
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-20 mb-11 mt-14 mx-28">
+                <div class="mt-3">
+                    <div>
+                        <img class="w-full" src="./css/images/team-1.png" alt="">
+                    </div>
+                    <h3 class="Sans text-[#787976] mt-4 mb-2 text-center text-xl ">John Whitelong</h3>
+                    <h2 class="text-center text-base font-bold Mont ">
+                        General Manager
+                    </h2>
+                    <div class="flex justify-center mt-2">
+                        <div class="mb-5 bg-cover bg-no-repeat mr-2 cursor-pointer  h-[35px] w-[40px] " style="background-image: url('./css/images/hexagon-green.svg')">
+                            <i class="fab hover:text-[#fc68d7] hover:transition-all fa-facebook-f h-[35px] text-white text-[25px] flex justify-around items-center "></i>
+                        </div>
+                        <div class="mb-5 bg-cover bg-no-repeat  cursor-pointer h-[35px] w-[40px] " style="background-image: url('./css/images/hexagon-green.svg')">
+                            <i class="fab fa-twitter h-[35px] hover:text-[#fc68d7] hover:transition-all text-white text-[25px] flex justify-around items-center "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div>
+                        <img class="w-full" src="./css/images/team-2.png" alt="">
+                    </div>
+                    <h3 class="Sans text-[#787976] mt-4 mb-2 text-center text-xl ">Veronique Smith</h3>
+                    <h2 class="text-center text-base font-bold Mont ">
+                        Business Developer
+                    </h2>
+                    <div class="flex justify-center mt-2">
+                        <div class="mb-5 bg-cover bg-no-repeat mr-2 cursor-pointer  h-[35px] w-[40px] " style="background-image: url('./css/images/hexagon-green.svg')">
+                            <i class="fab hover:text-[#fc68d7] hover:transition-all fa-facebook-f h-[35px] text-white text-[25px] flex justify-around items-center "></i>
+                        </div>
+                        <div class="mb-5 bg-cover bg-no-repeat  cursor-pointer h-[35px] w-[40px] " style="background-image: url('./css/images/hexagon-green.svg')">
+                            <i class="fab fa-twitter h-[35px] hover:text-[#fc68d7] hover:transition-all text-white text-[25px] flex justify-around items-center "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div>
+                        <img class="w-full" src="./css/images/team-3.png" alt="">
+                    </div>
+                    <h3 class="Sans text-[#787976] mt-4 mb-2 text-center text-xl ">Chris Zimerman</h3>
+                    <h2 class="text-center text-base font-bold Mont ">
+                        Online Marketer
+                    </h2>
+                    <div class="flex justify-center mt-2">
+                        <div class="mb-5 bg-cover bg-no-repeat mr-2 cursor-pointer  h-[35px] w-[40px] " style="background-image: url('./css/images/hexagon-green.svg')">
+                            <i class="fab hover:text-[#fc68d7] hover:transition-all fa-facebook-f h-[35px] text-white text-[25px] flex justify-around items-center "></i>
+                        </div>
+                        <div class="mb-5 bg-cover bg-no-repeat  cursor-pointer h-[35px] w-[40px] " style="background-image: url('./css/images/hexagon-green.svg')">
+                            <i class="fab fa-twitter h-[35px] hover:text-[#fc68d7] hover:transition-all text-white text-[25px] flex justify-around items-center "></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div>
+                        <img class="w-full" src="./css/images/team-4.png" alt="">
+                    </div>
+                    <h3 class="Sans text-[#787976] mt-4 mb-2 text-center text-xl ">Mary Villalonga</h3>
+                    <h2 class="text-center text-base font-bold Mont ">
+                        Community Manager
+                    </h2>
+                    <div class="flex justify-center mt-2">
+                        <div class="mb-5 bg-cover bg-no-repeat mr-2 cursor-pointer  h-[35px] w-[40px] " style="background-image: url('./css/images/hexagon-green.svg')">
+                            <i class="fab hover:text-[#fc68d7] hover:transition-all fa-facebook-f h-[35px] text-white text-[25px] flex justify-around items-center "></i>
+                        </div>
+                        <div class="mb-5 bg-cover bg-no-repeat  cursor-pointer h-[35px] w-[40px] " style="background-image: url('./css/images/hexagon-green.svg')">
+                            <i class="fab fa-twitter h-[35px] hover:text-[#fc68d7] hover:transition-all text-white text-[25px] flex justify-around items-center "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x- sm:px-0 lg:px-28 lg:mb-10 ">
+                <div>
+                    <img class="rounded-md h-full md:w-full" src="./css/images/about.jpg" alt="">
+                </div>
+                <div class="pl-24 pr-9 pt-4">
+                    <p class="Mont font-bold text-[14px] text-[#14bf98]">ABOUT</p>
+                    <h1 class="Mont text-xl md:text-2xl lg:text-3xl text-[#424242] font-bold mt-3 mb-4">We're Passionate About Delivering Growth Services</h1>
+                    <p class="Sans text-base text-[#787976] mt-1 mb-3">Our goal is to provide the right business growth services at the appropriate time so companies can benefit from the created momentum and thrive for a long period of time</p>
+                    <div class="mt-4">
+                        <span class=" Sans mt-1 block text-[#787976] text-base ">
+                            <i class = "fas fa-square text-[#14bf98] text-[10px] mr-[10px]  "></i> Everything we recommend has direct positive impact
+                        </span>
+                        <span class=" Sans mt-1 block text-[#787976] text-base ">
+                            <i class = "fas fa-square text-[#14bf98] text-[10px] mr-[10px]  "></i> 
+                            You will become an important partner of our company
+                        </span>
+                    </div>
+                    <div class="flex justify-center mt-4">
+                        <img class="h-[90px] rounded-full" src="./css/images/DNS.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-[#113448] ">
+            <div class="Mont text-center ">
+                <h1 class="text-4xl text-[#14bf98] font-bold pb-5 pt-8">
+                    Welcome to DNS
+                </h1>
+                <a href="https://www.facebook.com/sangfanreal" class="text-[#14bf98] hover:text-[#f837c8] hover:transition-all block text-lg pb-6">facebook.com/sangfanreal </a>
+                <div class="flex justify-center pb-8">
+                    <img class="h-[160px] rounded-full" src="./css/images/DNS.png" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./scripts/navbar.js "></script>
+    <script src="./scripts/tabUI.js"></script>
+</body>
+
+</html>

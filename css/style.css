@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Sans {
+    font-family: open-sans, sans-serif;
+}
+
+.Mont {
+    font-family: Montserrat, sans-serif;
+}
+
+.active {
+    color: #14bf98;
+    display: inline-flex !important;
+}
+
+.tab-pane {
+    display: none;
+}
